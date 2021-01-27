@@ -1,67 +1,41 @@
 
+// first question
 
-// var questions= [
-//     {
-//         prompt: "What is my name? \n (a) Rain\n (b) Bob ",
+let correct1 = document.getElementById("correct1");
+let wrong1 = document.getElementById("wrong1");
+// correct1.style.color = "red"; TEST
 
-//         answer: "a"
-//     }
-// ]
-// }
+let score;
 
-// var score = 0;
-
-// for (var a=0; a< questions.length; a++){
-//     var response = window.prompt(questions[a].prompt);
-//     if(response == questions[a].answer){
-//         score++;
-//         alert("NICE!");
-
-//     } else {
-//         alert("WRONG!");
-//     }
-// }
-
-
-console.log("welcome");
-
-let title = document.getElementById("title");
-let myButton = document.getElementById ("mybutton");
-let myText = document.getElementById("container");
-
-// myText.style.margin="25%";
-
-myText.style.fontFamily="helvetica"
-myText.style.fontSize="2em";
-title.style.color="orange";
-
-myButton.style.color= "purple";
-myButton.style.borderRadius="10px";
-myButton.addEventListener("click",function colorchange() {
-    myButton.style.color= "blue";
+correct1.addEventListener("click",function () {
+    score = 1;
+    correct1.setAttribute("style", "background-color: pink; color: black; "); 
+    wrong1.setAttribute("style", "");    
+    console.log (score);
 })
 
-// myText.style.backgroundColor="green";
+wrong1.addEventListener("click",function () {
+    score = 0;
+    wrong1.setAttribute("style", "background-color: pink; color: black; ");
+    correct1.setAttribute("style", "");       
+})
 
+//second question
 
+let correct2 = document.getElementById("correct2");
+let wrong2 = document.getElementById("wrong2");
+// correct1.style.color = "red"; TEST
 
+let score2;
 
+correct2.addEventListener("click",function () {
+    score2 = 1;
+    correct2.setAttribute("style", "background-color: pink; color: black; "); 
+    wrong2.setAttribute("style", "");     
+})
 
-var start,middle,end;
-start = ["ball", "clock", "dancer", "rock", "boy", "tea"];
-middle = ["poured", "said", "made", "whipped", "talked", "rolled", "painted", "breathed", "wrote", "coded"];
-end = ["you", "money", "art", "toys", "cloth", "music", "gold", "magic", "titan", "javascript"];
-
-function sentence() {
-    var num1 = Math.floor(Math.random() * 6);
-    var num2 = Math.floor(Math.random() * 10);
-    var num3 = Math.floor(Math.random() * 10);
-
-    var content = "The " + start[num1] + " " + middle[num2] + " " + end[num3] + ".";
-  document.getElementById('sentence').innerHTML = "&quot;" + content + "&quot;";
-};
-
-// let sentence= document.getElementById="sentence";
-
-sentence();
-
+wrong2.addEventListener("click",function () {
+    score2 = 0;
+    wrong2.setAttribute("style", "background-color: pink; color: black; ");
+    correct2.setAttribute("style", "");       
+})

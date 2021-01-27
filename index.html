@@ -1,35 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <main>
-        <head>
-            <script src="script.js" defer></script>
-            <link rel="stylesheet" href="style.css">
-        </head>
+<!doctype html>
 
-            <body>
-                <div id="container">
-                <h1 id="title"> Sentence Generator</h1>
-                <button onclick="history.go(0);" id="mybutton">Generate Sentence</button>
-                <p id="sentence"></p>
-                </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.typekit.net/ryd1ufi.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  
+  <main>
+        <section>
+            <div class="question">When did Jordan win his first Championship?</div>
+                <button id="correct1">1991</button>
+                <button id="wrong1">1994</button>
+        </section>
+        <section>
+            <div class="question">Who was MJ's most well-known and important teammate?</div>
+                <button id="wrong2">Charles Barkley</button>
+                <button id="correct2">Scottie-Pippen</button>
+        </section>
+        <section>
+            <div class="question">What did MJ do during his 1 year retirement?</div>
+                <button id="wrong3">He travelled and rested</button>
+                <button id="correct3">He played professional Baseball</button>
+                
+        </section>
+
+        <br>
+        <br>
+        <!-- <br> -->
+        <div class="result" id="win">Congrats! You are a G.O.A.T </div>
+        <div class="result" id="fail">So who do you like? Lebron? Come on! </div>
 
 
 
-
-
-
-            </body>
-
-
-
-
-
-
-
-    </main>
-
-
-
-
-
+  </main>
+</body>
 </html>

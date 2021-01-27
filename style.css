@@ -1,9 +1,39 @@
 body {
-    margin-left: 40%;
-    margin-top: 20%;
+    /* margin-left: 40%;
+    margin-top: 20%; */
     justify-content: center;
+    background-color: brown;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
-#mybutton {
-    left: 20px;
+
+
+main{
+    color: whitesmoke;
+    /* text-shadow: whitesmoke 1px 1px 10px; */
+    font-family: linotype-didot,serif;
+    font-weight: 700;
+    font-style: italic; 
+    font-size: 2em;
+    
+}
+
+button {
+    background-color: #897468;
+    color: whitesmoke;
+    /* text-shadow: whitesmoke 1px 1px 10px; */
+    font-family: linotype-didot,serif;
+    font-weight: 700;
+    font-style: italic; 
+    font-size: .7em;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 20px;
+    /* box-shadow: cornsilk 1px 1px 3px; */
+}
+
+.result {
+
+    display: none;
 }
