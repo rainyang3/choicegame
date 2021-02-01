@@ -3,8 +3,8 @@
 
 let correct1 = document.getElementById("correct1");
 let wrong1 = document.getElementById("wrong1");
-// correct1.style.color = "red"; TEST
-
+let win = document.getElementById("win");
+let fail = document.getElementById("fail");
 let score;
 
 correct1.addEventListener("click",function () {
@@ -24,7 +24,7 @@ wrong1.addEventListener("click",function () {
 
 let correct2 = document.getElementById("correct2");
 let wrong2 = document.getElementById("wrong2");
-// correct1.style.color = "red"; TEST
+
 
 let score2;
 
@@ -39,3 +39,29 @@ wrong2.addEventListener("click",function () {
     wrong2.setAttribute("style", "background-color: pink; color: black; ");
     correct2.setAttribute("style", "");       
 })
+
+//third question
+
+let correct3 = document.getElementById("correct3");
+let wrong3 = document.getElementById("wrong3");
+
+
+let score3;
+
+correct3.addEventListener("click",function () {
+    score3 = 1;
+    correct3.setAttribute("style", "background-color: pink; color: black; "); 
+    wrong3.setAttribute("style", "");     
+})
+
+wrong3.addEventListener("click",function () {
+    score3 = 0;
+    wrong3.setAttribute("style", "background-color: pink; color: black; ");
+    correct3.setAttribute("style", "");       
+})
+
+if(score == 1 && score2 == 1 && score3 == 1) {
+win.style.display();}
+
+else {fail.style.display();}
+
